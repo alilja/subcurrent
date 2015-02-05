@@ -1,0 +1,16 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style/base.css" />
+    {% block extra_stylesheet %}{% endblock %}
+    <title>{{ site_name }} - {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright {{ year }} by Andrew Lilja.
+        {% endblock %}
+    </div>
+</body>
